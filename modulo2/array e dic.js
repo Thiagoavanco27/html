@@ -4,32 +4,72 @@ valor = Array;
 console.log(typeof valor);
 function amor() {}
 console.log(typeof amor);
+
 //dicionario
+
 let S1724 = {
     Produto: "Grampo S-524",
     material: "Aluminio",
     quantidade: 25,
     peso: 5,
 };
-
 console.log(S1724);
+
 //Em JavaScript, você pode adicionar um item a um dicionário
 
 let data = new Date("2023-12-27");
 S1724["data"] = data;
-
 console.log(S1724);
 
 // Removendo um item usando o operador delete
 
 delete S1724.data;
-
 console.log(S1724);
 
 // Modificando o valor associado à chave2
 S1724.quantidade = 20;
-
 console.log(S1724);
+
+// Adicionar uma Lista como Valor de uma Chave:
+const rg = {
+    numero: 4256321756,
+    documentos: ["CPF", "CNH", "SUS", "CT", "PIS"],
+    brasileiro: true,
+    mãe : "Maria",
+    Pai : "Joao"
+}
+console.log(rg)
+
+//Adicionar Outro Objeto como Valor de uma Chave:
+const meuObjeto = {
+    pessoa: {
+      nome: "Alice",
+      idade: 25
+    },
+    cidade: "São Paulo"
+  };
+  console.log(meuObjeto)
+  // Adicionar outro objeto como valor da chave "carro"
+  meuObjeto.carro = {
+    modelo: "Fusca",
+    ano: 1970
+  };
+  console.log(meuObjeto);
+  // { pessoa: { nome: 'Alice', idade: 25 }, cidade: 'Exemplo', carro: { modelo: 'Fusca', ano: 1970 } }
+  //Verificar se uma Chave Existe:
+  
+  const meuObjeto = {
+    nome: "Maria",
+    idade: 28
+  };
+  
+  // Verificar se a chave "idade" existe
+  if ("idade" in meuObjeto) {
+    console.log("A chave 'idade' existe no objeto.");
+  } else {
+    console.log("A chave 'idade' não existe no objeto.");
+  }
+  
 
 //ARRAY - lista
 const lista = [];
@@ -63,8 +103,6 @@ const minhaLista = [];
 const tamanhoLista = minhaLista.length;
 console.log(tamanhoLista);
 
-minhaLista = [1,2,3,4,5,6,7];
-console.log(tamanhoLista);
 
 // Usando let para criar uma lista
 let minhaListaLet = [1, 2, 3];
