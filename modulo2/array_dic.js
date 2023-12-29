@@ -56,13 +56,8 @@ const meuObjeto = {
   };
   console.log(meuObjeto);
   // { pessoa: { nome: 'Alice', idade: 25 }, cidade: 'Exemplo', carro: { modelo: 'Fusca', ano: 1970 } }
+  
   //Verificar se uma Chave Existe:
-  
-  const meuObjeto = {
-    nome: "Maria",
-    idade: 28
-  };
-  
   // Verificar se a chave "idade" existe
   if ("idade" in meuObjeto) {
     console.log("A chave 'idade' existe no objeto.");
@@ -110,3 +105,29 @@ minhaListaLet.push(4);
 
 // Reatribuindo a variável (tanto com const quanto com let)
 minhaListaLet = [5, 6, 7]; // Permite reatribuição, pois usamos let
+
+// Criar um array de objetos
+const arrayDeObjetos = [
+  { nome: "Alice", idade: 25 },
+  { nome: "Bob", idade: 30 },
+  { nome: "Charlie", idade: 35 }
+];
+
+// Acessar e modificar valores dentro do array de objetos
+console.log(arrayDeObjetos[0].nome); // Saída: Alice
+console.log(arrayDeObjetos[1].idade); // Saída: 30
+
+// Adicionar um novo objeto ao array
+arrayDeObjetos.push({ nome: "David", idade: 40 });
+
+console.log(arrayDeObjetos);
+/*
+Saída:
+[
+  { nome: 'Alice', idade: 25 },
+  { nome: 'Bob', idade: 30 },
+  { nome: 'Charlie', idade: 35 },
+  { nome: 'David', idade: 40 }
+]
+*/
+
