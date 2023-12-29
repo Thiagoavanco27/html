@@ -1,4 +1,3 @@
 # html.01
 
-primeira aula de GIT
-
+Repositório para salvar meus treinos e testes
